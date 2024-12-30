@@ -14,4 +14,4 @@ dependencies:
 
   - pip
   - pip:
-    - git+https://github.com/seoklab/openfold@121c341
+    - git+https://github.com/durrantlab/pymolecule@121c341
