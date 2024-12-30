@@ -1,0 +1,17 @@
+name: povme
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.12
+  - numpy>=2.1.3, <3
+  - scipy>=1.14.1,<2
+  
+  - pydantic>=2.10.2,<3
+  - pyyaml>=6.0.2,<7
+
+  - loguru=0.7.2
+  - ray-default>=2.38.0,<3
+
+  - pip
+  - pip:
+    - git+https://github.com/seoklab/openfold@121c341
