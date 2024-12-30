@@ -47,6 +47,25 @@ pixi shell
 
 ## Installation
 
+Conda is enough for simply running POVME without development.
+
+```bash
+git clone https://github.com/durrantlab/POVME
+cd POVME
+conda env create -f environment.yaml
+conda activate povme
+pip install -e .
+```
+
+To validate your installation by running pytest, run:
+
+```bash
+cd PATH/TO/POVME
+pytest -c .pytest.ini --cov='povme' --cov-report=xml --junit-xml=report.xml --failed-first
+```
+
+The code above will create a report named 'report.xml'
+
 ### Development
 
 To install the latest development version of `povme`, follow these steps.
