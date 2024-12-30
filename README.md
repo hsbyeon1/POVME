@@ -61,7 +61,7 @@ To validate your installation by running pytest, run:
 
 ```bash
 cd PATH/TO/POVME
-pytest -c .pytest.ini --cov='povme' --cov-report=xml --junit-xml=report.xml --failed-first
+PYTHONPATH=. pytest -c .pytest.ini --cov='povme' --cov-report=xml --junit-xml=report.xml --failed-first
 ```
 
 The code above will create a report named 'report.xml'
